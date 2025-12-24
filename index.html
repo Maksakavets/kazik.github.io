@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Казик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>КАЗИК</h1>
+        <div class="balance">
+            <h2>Баланс: <span id="balance">100</span>$</h2>
+        </div>
+        <div class="payment">
+            <p>чтобы пополнить баланс, киньте деньги на ... озон банк</p>
+        </div>
+        <div class="roulette-container">
+            <div class="roulette">
+                <canvas id="wheel" width="400" height="400"></canvas>
+            </div>
+            <div class="pointer-right"></div>
+        </div>
+        <button id="spin">Крутить</button>
+        <div id="result"></div>
+    </div>
+
+    <div id="screamer" class="modal">
+        <img id="screamer-img" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
