@@ -1,0 +1,92 @@
+body {
+    background: url('background.jpg') center/contain no-repeat fixed #000;
+    font-family: Arial;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0,0,0,0.85);
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.roulette-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.roulette {
+    width: 400px;
+    height: 400px;
+}
+
+#wheel {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000;
+}
+
+.pointer-right {
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 50px solid gold;
+    margin-left: -20px;
+    filter: drop-shadow(0 0 5px #000);
+    transform: rotate(180deg);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 9999;
+}
+
+#screamer-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#spin {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#spin:hover {
+    background: #600000;
+}
+
+#result {
+    font-size: 24px;
+    margin: 20px;
+    color: gold;
+}
+
+.payment {
+    background: rgba(139, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+
+.balance h2 {
+    color: gold;
+}
